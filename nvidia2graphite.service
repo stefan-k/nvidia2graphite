@@ -1,0 +1,9 @@
+[Unit]
+Description=Send NVIDIA GPU metrics to graphite
+
+[Service]
+ExecStart=/usr/local/bin/nvidia2graphite.py
+
+[Install]
+WantedBy=multi-user.target
+Alias=nvidia2graphite.service
