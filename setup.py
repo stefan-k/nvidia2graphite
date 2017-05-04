@@ -17,5 +17,6 @@ setup(name='nvidia2graphite',
       maintainer='Stefan Kroboth',
       url='https://github.com/stefan-k/nvidia2graphite',
       license='MIT License',
+      scripts=['nvidia2graphite.py'],
       data_files=[('/etc/', ['nvidia2graphite.conf']),
                   ('/etc/systemd/system/', ['nvidia2graphite.service'])])
