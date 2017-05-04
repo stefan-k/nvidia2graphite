@@ -62,7 +62,8 @@ if __name__ == '__main__':
                 for level in metric.split('.'):
                     curr_level = curr_level.find(level)
                 data = re.sub(r"\D", "", curr_level.text)
-                metric_dict[metric] = data
+                if data is not None and data != '':
+                    metric_dict[metric] = data
 
             # setup graphite and send dictionary
             g = graphitesend.init(group='gpu' + str(gpu_id),
