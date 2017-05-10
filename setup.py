@@ -19,4 +19,4 @@ setup(name='nvidia2graphite',
       license='MIT License',
       scripts=['nvidia2graphite.py'],
       data_files=[('/etc/', ['nvidia2graphite.conf']),
-                  ('/etc/systemd/system/', ['nvidia2graphite.service'])])
+                  ('/lib/systemd/system/', ['nvidia2graphite.service'])])

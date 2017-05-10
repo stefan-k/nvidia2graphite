@@ -19,16 +19,16 @@ As superuser run:
 python3 setup.py install
 ```
 
-Activate the service (this should be easier but this was the only way I was able to get it to work (suggestions welcome)):
+Enablethe service:
 
 ```
-systemctl --global enable /etc/systemd/system/nvidia2graphite.service
+systemctl enable nvidia2graphite
 ```
 
 Start the service:
 
 ```
-systemctl start nvidia2graphite.service
+systemctl start nvidia2graphite
 ```
 
 Every change of the configuration (see next section) requires a restart of the servive.
